@@ -1,0 +1,89 @@
+body
+{
+    
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/img/img.png);
+    background-position: center;
+    background-size: cover;
+    
+
+    
+}
+
+.con
+{
+    width: 100vw;
+    height: 100vh;
+    
+    padding: 0 8%;
+    position: relative;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content
+{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+}
+.content h1 
+{
+    font-size: 50px;
+    
+}
+.content h1 span 
+{
+    color: dodgerblue;
+}
+.content a 
+{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: .2s;
+}
+.content a:hover
+{
+    border: 2px solid dodgerblue;
+    
+}
+.content a ion-icon
+{
+    color: dodgerblue;
+    height: 20px;
+}
+.content a:hover ion-icon
+{
+    color: white;
+}
+
+.time
+{
+    display: flex;
+
+}
+.time div 
+{
+    flex-basis: 100px;
+
+}
+.time div p 
+{
+    font-size: 50px;
+    margin-bottom: -9px;
+}
+.time div span 
+{
+    font-size: 20px;
+}

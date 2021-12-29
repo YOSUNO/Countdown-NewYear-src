@@ -1,0 +1,93 @@
+
+<!--นี่ src countdown new year web นะค่ะ-->
+
+
+<!--github : YOSUNO-->
+
+<!--youtube : yosuno-->
+
+
+
+
+<!--ไปลบเอาเองนะจ๊ะ-->
+
+<!--ไปลบ + ดัดปลง เอาเองนะจ๊ะ-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สุขสันต์วันปีใหม่</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/cute.jpg">
+</head>
+<body>
+    <div class="con">
+        <div class="content">
+            <!--เอาไปเปลี่ยนเป็น countdown อย่างอื่นได้นะ-->
+           <!--ไปลบเอาเองนะจ๊ะ--> <p>Happy New year With Yosuno</p>
+            <h1>Happy <span> New year </span></h1>
+            <div class="time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Day</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hour</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minute</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Second</span>
+                </div>
+            </div>
+            <br>
+            <br>
+            
+           <!--ไปลบเอาเองนะจ๊ะ--> <a href="https://www.facebook.com/people/%E3%83%9E%E3%83%9E%E3%81%AF%E3%81%84-%E3%81%93%E3%82%8C/100065110274191/"><ion-icon name="logo-facebook"></ion-icon> Yosuno</a>
+        </div>
+
+
+    
+    </div>
+
+
+
+
+
+    <script>
+
+        var countdown = new Date("Dec 31, 2021 00:00:00").getTime();
+        var yosuno = setInterval(function(){
+            var now = new Date().getTime();
+            var a = countdown - now;
+
+            var days = Math.floor(a / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((a % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((a % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((a % (1000 * 60)) / 1000);
+
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        },1000);
+
+    </script>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
